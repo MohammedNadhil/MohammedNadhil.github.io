@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aldrich', sans-serif;
+  background-color: #001133;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 50px 0;
+}
+
+nav {
+  position: fixed; /* Stays fixed on scroll */
+  top: 0;
+  right: 0;
+  background-color: #001133; /* Navbar background */
+  padding: 10px 20px;
+  z-index: 1000; /* Stays on top of other elements */
+  display: flex;
+  gap: 20px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Align elements horizontally */
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline; /* Ensure items are displayed inline */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #76747f;
+}
+
+main {
+  padding-top: 60px; /* Avoid overlap with fixed navbar */
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  main {
+    padding-top: 50px; /* Adjust padding to avoid overlap */
+  }
+}
+
+/* Intro Section */
+.intro-text {
+  margin-top: 190px;
+  margin-left: 0px;
+}
+.small-text {
+  font-size: 1.2rem;
+}
+.main-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between; /* Align content on the left and image on the right */
+  align-items: center; /* Vertically center both elements */
+  background-color: white; /* White background for the box */
+  color: #001133; /* Text color */
+  padding: 40px; /* Padding inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  max-width: 1200px; /* Set max width of the box */
+  margin: 40px auto; /* Center the box horizontally on the page */
+}
+
+.about-text {
+  width: 50%; /* Text occupies the left half */
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  width: 50%; /* Image occupies the right half */
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 90%; /* Make sure the image is responsive */
+  border-radius: 10px; /* Round the image corners */
+}
+
+/* Projects Section */
+.projects-container {
+  height: 100vh;
+  max-width: 1000px;
+  margin-top: 200px;;
+}
+
+.project-item {
+  margin: 20px 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+.projects-container h2{
+  font-size: 2.5rem;
+  margin-left: 70%;
+}
+
+
+.project-content {
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width:500px; 
+  margin: 0;
+  margin-left:50%;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.project-content:hover {
+  background-color: #fff;
+  color: #001133;
+  transform: scale(1.02);
+}
+
+.project-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* Contact Section */
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  color: #001133;
+  margin-top: auto;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Footer Fix */
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
